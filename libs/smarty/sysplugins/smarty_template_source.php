@@ -165,7 +165,7 @@ class Smarty_Template_Source
             $template_resource = $_template->template_resource;
         }
         if (empty($template_resource)) {
-            throw new SmartyException('Source: Missing  name');
+                throw new SmartyException('Source: Missing  name');
         }
         // parse resource_name, load resource handler, identify unique resource name
         if (preg_match('/^([A-Za-z0-9_\-]{2,})[:]([\s\S]*)$/', $template_resource, $match)) {

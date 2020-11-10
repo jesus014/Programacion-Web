@@ -1,6 +1,6 @@
 <?php
+require_once dirname (__FILE__). '/include/smarty.php';
 
-require_once (__FILE__). 'include/smarty.php';
     $modulo = isset($_GET['modulo']) ? $_GET['modulo'] : "inicio";
     $ruta =  dirname(__FILE__)."/modulos/{$modulo}.php";
     if ( file_exists ($ruta) ){
